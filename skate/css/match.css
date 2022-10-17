@@ -1,0 +1,94 @@
+.events_channel{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.events_hot{
+   display: flex;
+}
+.events_hot_list{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.channel_hot_list h2{
+    font-size: 22px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+}
+.channel_hot_list h2 a{ color: #ee0000;}
+.channel_hot_list h3{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    /*font-family:verdana, arial,"宋体",simsun;*/
+}
+.channel_hot_list h3 a{ }
+.channel_hot_list li {
+    list-style: none;
+    line-height: 180%;
+}
+#video_channel_li li{
+    list-style: disc;
+}
+.channel_hot_list li:hover {
+    color: #ee0000;
+}
+.channel_hot_list li span{
+    font-size: 16px;
+    color: #ee0000;
+    /*font-family: "微软雅黑";*/
+}
+.hot1{
+    margin: 0;
+    padding: 0;
+}
+.events_focus{
+    margin-top: 20px;
+}
+.focus{ position:relative; width:580px; height:325px; background-color: #000;overflow: hidden }
+.focus img{ width: 580px; height: 325px;}
+.focus .fPic{ position:absolute; left:0px; top:0px;width: 2900px;display: flex;animation: run 15s linear infinite; }
+.focus .shadow{ width:100%;position:absolute; bottom:0; left:0px; z-index:10; height:60px; line-height: 50px; background:rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9;  display:block;  text-align:left; }
+.focus .shadow a{width: 560px; text-decoration:none;color:#fff; font-size:20px; overflow:hidden;margin-left:10px; font-family: "\5FAE\8F6F\96C5\9ED1";display:block; white-space: nowrap;text-overflow:ellipsis; }
+.focus .shadow a:hover{width: 560px;color: #EEEE00;}
+.focus .fcon{ position:relative; width:100%; background:#000  }
+.focus .fcon img{ display:block; }
+@keyframes run {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-580px);
+    }
+    25%{
+        transform: translateX(-580px);
+    }
+    35%{
+        transform: translateX(-1160px);
+    }
+    50%{
+        transform: translateX(-1160px);
+    }
+    60%{
+        transform: translateX(-1740px);
+    }
+    75%{
+        transform: translateX(-1740px);
+    }
+    85%{
+        transform: translateX(-2320px);
+    }
+    100%{
+        transform: translateX(-2320px);
+
+    }
+}
+
+.fPic:hover{
+    animation-play-state: paused;
+}
